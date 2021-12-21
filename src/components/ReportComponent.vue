@@ -12,7 +12,7 @@
     </div>
     <div class="grid-cell3">
       <h3>รักษาตัวในโรงพยาบาลลดลง</h3>
-      <h1>+2525</h1>
+      <h1>- 2525</h1>
       <p>สะสม 2415613543</p>
     </div>
     <div class="grid-cell4">
@@ -22,12 +22,12 @@
     </div>
     <div class="grid-cell5">
       <h3>ผู้รับวัคซีน โดส 1</h3>
-      <h1>+2525</h1>
+      <h1>+ 2525</h1>
       <p>สะสม 2415613543</p>
     </div>
     <div class="grid-cell6">
       <h3>ผู้รับวัคซีน โดส 2</h3>
-      <h1>+2525</h1>
+      <h1>+ 2525</h1>
       <p>สะสม 2415613543</p>
     </div>
     <div class="grid-cell7">
@@ -57,20 +57,20 @@ export default {
 .container {
   display: grid;
   margin-left: 100px;
-  width: 40%;
+  width: 50%;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
   align-content: center;
 }
 .grid-cell1 {
-  grid-column: 1/2;
+  grid-column: 1/3;
   grid-row: 1/3;
   border: 1px solid #000;
   border-radius: 20px 0px 0px 0px;
   text-indent: 10px;
 }
 .grid-cell2 {
-  grid-column: 2/5;
+  grid-column: 3/5;
   grid-row: 1/3;
   border: 1px solid #000;
   border-radius: 0px 20px 0px 0px;
@@ -78,13 +78,13 @@ export default {
 }
 .grid-cell3,
 .grid-cell5 {
-  grid-column: 1/2;
+  grid-column: 1/3;
   border: 1px solid #000;
   text-indent: 10px;
 }
 .grid-cell4,
 .grid-cell6 {
-  grid-column: 2/5;
+  grid-column: 3/5;
   border: 1px solid #000;
   text-indent: 10px;
 }

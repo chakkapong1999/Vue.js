@@ -3,12 +3,12 @@
   <Navbar />
   <Topic time="7.50" />
   <Report
-    :new_case="2525"
-    :total_case="2194053"
-    :new_death="31"
-    :total_death="21408"
-    :new_recovered="4190"
-    :total_recovered="2132548"
+    :new_case="info.new_case"
+    :total_case="info.total_case"
+    :new_death="info.new_death"
+    :total_death="info.total_death"
+    :new_recovered="info.new_recovered"
+    :total_recovered="info.total_recovered"
   />
 </template>
 
@@ -26,15 +26,14 @@ export default {
   },
   data() {
     return {
-      info: null,
+      info: [],
     };
   },
-  mounted() {
+  created() {
     axios
       .get("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all")
       .then((response) => {
         this.info = response.data[0];
-        console.log(this.info);
       });
   },
 };
