@@ -1,7 +1,7 @@
 <template>
   <div class="topic">
     <h1>สถิติผู้ติดเชื้อโควิด-19 ในไทย</h1>
-    <p>ข้อมูลอัปเดทล่าสุด: 20 ธันวาคม 2564 | {{time}} น.</p>
+    <p>ข้อมูลอัปเดทล่าสุด: {{date}} | {{time}} น.</p>
   </div>
 </template>
 
@@ -9,7 +9,8 @@
 export default {
   name: 'Topic',
   props: {
-    time: String
+    time: String,
+    date: String
   }
 }
 </script>

@@ -2,13 +2,13 @@
   <div class="container">
     <div class="grid-cell1">
       <h3>ติดเชื้อเพิ่มขึ้น</h3>
-      <h1>+ {{ new_case }}</h1>
-      <p>สะสม {{ total_case }}</p>
+      <h1>+ {{ info.new_case }}</h1>
+      <p>สะสม {{ info.total_case }}</p>
     </div>
     <div class="grid-cell2">
       <h3>เสียชีวิตเพิ่มขึ้น</h3>
-      <h1>+ {{ new_death }}</h1>
-      <p>สะสม {{ total_death }}</p>
+      <h1>+ {{ info.new_death }}</h1>
+      <p>สะสม {{ info.total_death }}</p>
     </div>
     <div class="grid-cell3">
       <h3>รักษาตัวในโรงพยาบาลลดลง</h3>
@@ -17,8 +17,8 @@
     </div>
     <div class="grid-cell4">
       <h3>หายแล้วเพิ่มขึ้น</h3>
-      <h1>+ {{ new_recovered }}</h1>
-      <p>สะสม {{ total_recovered }}</p>
+      <h1>+ {{ info.new_recovered }}</h1>
+      <p>สะสม {{ info.total_recovered }}</p>
     </div>
     <div class="grid-cell5">
       <h3>ผู้รับวัคซีน โดส 1</h3>
@@ -43,12 +43,7 @@
 export default {
   name: "Report",
   props: {
-    new_case: Number,
-    total_case: Number,
-    new_death: Number,
-    total_death: Number,
-    new_recovered: Number,
-    total_recovered: Number,
+    info: Object
   },
 };
 </script>
