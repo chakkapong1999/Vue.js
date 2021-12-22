@@ -74,7 +74,7 @@ export default {
 
 <style scoped>
 h1 {
-  font-size: 40px;
+  font-size: 45px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
