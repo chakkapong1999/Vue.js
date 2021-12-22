@@ -2,16 +2,16 @@
   <div class="container">
     <div class="grid-cell1">
       <h3>ติดเชื้อเพิ่มขึ้น</h3>
-      <h1>+ {{ info.new_case }}</h1>
+      <h1>+ {{ formatNumber(info.new_case) }}</h1>
       <p>
-        สะสม <b> {{ info.total_case }}</b>
+        สะสม <b> {{ formatNumber(info.total_case) }}</b>
       </p>
     </div>
     <div class="grid-cell2">
       <h3>เสียชีวิตเพิ่มขึ้น</h3>
-      <h1>+ {{ info.new_death }}</h1>
+      <h1>+ {{ formatNumber(info.new_death) }}</h1>
       <p>
-        สะสม <b> {{ info.total_death }}</b>
+        สะสม <b> {{ formatNumber(info.total_death) }}</b>
       </p>
     </div>
     <div class="grid-cell3">
@@ -21,9 +21,9 @@
     </div>
     <div class="grid-cell4">
       <h3>หายแล้วเพิ่มขึ้น</h3>
-      <h1>+ {{ info.new_recovered }}</h1>
+      <h1>+ {{ formatNumber(info.new_recovered) }}</h1>
       <p>
-        สะสม <b>{{ info.total_recovered }} </b>
+        สะสม <b>{{ formatNumber(info.total_recovered) }} </b>
       </p>
     </div>
     <div class="grid-cell5">
@@ -46,10 +46,16 @@
 </template>
 
 <script>
+var numeral = require("numeral");
 export default {
   name: "Report",
   props: {
     info: Object,
+  },
+  methods: {
+    formatNumber(value) {
+      return numeral(value).format("0,0");
+    },
   },
 };
 </script>
@@ -74,7 +80,7 @@ b {
   grid-template-rows: auto auto;
   align-content: center;
   color: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .grid-cell1 {
   grid-column: 1/3;

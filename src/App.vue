@@ -107,8 +107,10 @@ export default {
 
 <style>
 body {
+  background-color: #666666;
   background-image: url("https://www.regionofwaterloo.ca/en/health-and-wellness/resources/Images/nCoV1600x642.png");
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 </style>
