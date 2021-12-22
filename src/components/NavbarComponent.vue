@@ -47,9 +47,8 @@ ul {
 
 li {
   float: left;
-  border: 1px solid #000000;
   border-radius: 40px;
-  background-color: #0E0C0C;
+  background: rgba(0, 0, 0,0.7);
   margin-inline: 5px;
 }
 

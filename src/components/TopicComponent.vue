@@ -23,5 +23,7 @@ export default {
   text-align: center;
   text-decoration: none;
   text-transform: none;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
 }
 </style>

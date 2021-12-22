@@ -105,5 +105,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+body {
+  background-image: url("https://www.regionofwaterloo.ca/en/health-and-wellness/resources/Images/nCoV1600x642.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 </style>
