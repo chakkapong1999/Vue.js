@@ -20,9 +20,11 @@
     </div>
     <div class="grid-item3">
       <h3>รักษาตัวในโรงพยาบาลลดลง</h3>
-      <h1>- 2525</h1>
+      <h1>- {{formatNumber(2525)}}</h1>
       <div class="total3">
-        <p>สะสม <b>2415613543 </b></p>
+        <p>
+          สะสม <b> {{ formatNumber(555555) }} </b>
+        </p>
       </div>
     </div>
     <div class="grid-item4">
@@ -36,29 +38,34 @@
     </div>
     <div class="grid-item5">
       <h3>ผู้รับวัคซีน โดส 1</h3>
-      <h1>+ 2525</h1>
+      <h1>+ {{formatNumber(2525)}}</h1>
       <div class="total5-6">
-        <p>สะสม <b>2415613543</b></p>
+        <p>
+          สะสม <b>{{ formatNumber(5555555) }}</b>
+        </p>
       </div>
     </div>
     <div class="grid-item6">
       <h3>ผู้รับวัคซีน โดส 2</h3>
-      <h1>+ 2525</h1>
+      <h1>+ {{formatNumber(2525)}}</h1>
       <div class="total5-6">
-        <p>สะสม <b>2415613543 </b></p>
+        <p>
+          สะสม <b>{{ formatNumber(5555555) }} </b>
+        </p>
       </div>
     </div>
     <div class="grid-item7">
       <h3>สะสม 76.37% ของประชากร</h3>
       <p>
-        นับเฉพาะเข็มแรกฉีดแล้ว 50546545 คน ไม่นับรวมโดสที่สองที่ฉีดซ้ำให้คนเดิม
+        นับเฉพาะเข็มแรกฉีดแล้ว {{formatNumber(5555555)}} คน
+        ไม่นับรวมโดสที่สองที่ฉีดซ้ำให้คนเดิม
       </p>
     </div>
   </div>
 </template>
 
 <script>
-var numeral = require("numeral");
+import numeral from 'numeral';
 export default {
   name: "Report",
   props: {
