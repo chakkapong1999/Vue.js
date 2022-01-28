@@ -51,6 +51,7 @@ li {
   background: rgba(0, 0, 0,0.7);
   margin-inline: 5px;
 }
+
 li a {
   display: block;
   text-align: center;
