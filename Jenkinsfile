@@ -6,8 +6,7 @@ pipeline {
  
         stage('Init'){
             steps {
-                echo 'Init'
-                echo '******************************'
+                bat 'npm install'
             }
         }
  
