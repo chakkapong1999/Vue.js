@@ -36,7 +36,6 @@ export default {
 .navbar{
   margin-left: 100px;
 }
-
 ul {
   list-style-type: none;
   margin: 0;
