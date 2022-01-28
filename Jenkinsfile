@@ -11,25 +11,11 @@ pipeline {
             }
         }
  
-        stage('Yarn Install') {
+        stage('Build') {
             steps {
-                echo 'Yarn Install'
-                echo '******************************'
+                sh 'npm run build'
             }
         }
  
-        stage('Yarn Build') {
-            steps {
-                echo 'Yarn Build'
-                echo '******************************'
-            }
-        }
- 
-        stage('Deploy') {
-            steps{
-                echo 'Deploy'
-                echo '******************************'
-            }
-        }
     }
 }
