@@ -115,7 +115,6 @@ b {
   text-indent: 20px;
   background: rgba(100, 94, 110, 0.7);
 }
-
 .grid-item3 {
   grid-column: 1/3;
   text-indent: 20px;
