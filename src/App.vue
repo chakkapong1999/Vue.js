@@ -98,7 +98,6 @@ export default {
       year = fullDate[0];
       year = parseInt(year) + 543;
       fullMonth = this.setMonth(parseInt(month));
-
       this.date = `${day} ${fullMonth} ${year}`;
     },
   },
