@@ -37,7 +37,6 @@ export default {
   margin-left: 100px;
 }
 
-
 ul {
   list-style-type: none;
   margin: 0;
