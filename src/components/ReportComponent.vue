@@ -141,7 +141,6 @@ b {
   text-align: center;
   background: rgba(100, 97, 78, 0.9);
 }
-
 .total1 {
   overflow: auto;
   background: rgba(148, 73, 75, 0.8);
