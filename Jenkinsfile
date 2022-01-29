@@ -15,6 +15,12 @@ pipeline {
                 bat 'npm run build'
             }
         }
+        
+        stage('Deploy') {
+            steps {
+                bat 'firebase login'
+            }
+        }
 
         stage('Deploy') {
             steps {
