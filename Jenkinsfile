@@ -22,7 +22,7 @@ pipeline {
             }
         }
         
-        stage('Deploy') {
+        stage('Login') {
             steps {
                 bat 'firebase login'
             }
