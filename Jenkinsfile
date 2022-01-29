@@ -9,22 +9,10 @@ pipeline {
                 bat 'npm install'
             }
         }
-        
-        stage('Init 2'){
-            steps {
-                bat 'npm install -g firebase-tools'
-            }
-        }
- 
+
         stage('Build') {
             steps {
                 bat 'npm run build'
-            }
-        }
-        
-        stage('Login') {
-            steps {
-                bat 'firebase login --interactive'
             }
         }
 
