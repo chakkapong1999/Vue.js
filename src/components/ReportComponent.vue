@@ -20,10 +20,10 @@
     </div>
     <div class="grid-item3">
       <h3>รักษาตัวในโรงพยาบาลลดลง</h3>
-      <h1>- {{ formatNumber(2525) }}</h1>
+      <h1>- {{ formatNumber(0) }}</h1>
       <div class="total3">
         <p>
-          สะสม <b> {{ formatNumber(555555) }} </b>
+          สะสม <b> {{ formatNumber(0) }} </b>
         </p>
       </div>
     </div>
@@ -38,26 +38,26 @@
     </div>
     <div class="grid-item5">
       <h3>ผู้รับวัคซีน โดส 1</h3>
-      <h1>+ {{ formatNumber(2525) }}</h1>
+      <h1>+ {{ formatNumber(0) }}</h1>
       <div class="total5-6">
         <p>
-          สะสม <b>{{ formatNumber(5555555) }}</b>
+          สะสม <b>{{ formatNumber(0) }}</b>
         </p>
       </div>
     </div>
     <div class="grid-item6">
       <h3>ผู้รับวัคซีน โดส 2</h3>
-      <h1>+ {{ formatNumber(2525) }}</h1>
+      <h1>+ {{ formatNumber(0) }}</h1>
       <div class="total5-6">
         <p>
-          สะสม <b>{{ formatNumber(5555555) }} </b>
+          สะสม <b>{{ formatNumber(0) }} </b>
         </p>
       </div>
     </div>
     <div class="grid-item7">
-      <h3>สะสม 76.37% ของประชากร</h3>
+      <h3>สะสม 0% ของประชากร</h3>
       <p>
-        นับเฉพาะเข็มแรกฉีดแล้ว {{ formatNumber(5555555) }} คน
+        นับเฉพาะเข็มแรกฉีดแล้ว {{ formatNumber(0) }} คน
         ไม่นับรวมโดสที่สองที่ฉีดซ้ำให้คนเดิม
       </p>
     </div>
