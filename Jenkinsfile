@@ -24,7 +24,7 @@ pipeline {
         
         stage('Login') {
             steps {
-                bat 'firebase login'
+                bat 'firebase login --interactive'
             }
         }
 
