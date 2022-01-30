@@ -2,25 +2,25 @@
   <div class="navbar">
     <ul>
       <div class="item">
-        <li><a href="">สถิติในไทย</a></li>
+        <li><a href="https://facebook.com/Chakkapong.Max/" target="_blank">สถิติในไทย</a></li>
       </div>
       <div class="item">
-        <li><a href="">สถิติวัคซีนในไทย</a></li>
+        <li><a href="https://facebook.com/Chakkapong.Max/" target="_blank">สถิติวัคซีนในไทย</a></li>
       </div>
       <div class="item">
-        <li><a href="">ข่าวโควิด-19</a></li>
+        <li><a href="https://facebook.com/Chakkapong.Max/" target="_blank">ข่าวโควิด-19</a></li>
       </div>
       <div class="item">
-        <li><a href="">Infographics</a></li>
+        <li><a href="https://facebook.com/Chakkapong.Max/" target="_blank">Infographics</a></li>
       </div>
       <div class="item">
-        <li><a href="">สถิติทั่วโลก</a></li>
+        <li><a href="https://facebook.com/Chakkapong.Max/" target="_blank">สถิติทั่วโลก</a></li>
       </div>
       <div class="item">
-        <li><a href="">ข้อควรรู้สู้ภัยโควิด-19</a></li>
+        <li><a href="https://facebook.com/Chakkapong.Max/" target="_blank">ข้อควรรู้สู้ภัยโควิด-19</a></li>
       </div>
       <div class="item">
-        <li><a href="">คลิปวิดีโอ</a></li>
+        <li><a href="https://facebook.com/Chakkapong.Max/" target="_blank">คลิปวิดีโอ</a></li>
       </div>
     </ul>
   </div>
