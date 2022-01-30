@@ -18,7 +18,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                bat 'firebase deploy --only hosting --token "${FIREBASE_TOKEN}"'
+                bat 'firebase deploy --only hosting --token "${env.FIREBASE_TOKEN}"'
             }
         }
  
