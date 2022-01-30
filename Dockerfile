@@ -1,1 +1,0 @@
-FROM node:14.8.3-alpine
