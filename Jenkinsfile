@@ -31,7 +31,9 @@ pipeline {
 
     stages {
         stage('Build Image') {
-            sh 'node --version'
+            steps {
+                sh 'node --version'
+            }
         }
     }
 }
