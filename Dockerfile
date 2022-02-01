@@ -3,5 +3,4 @@ COPY package.json package-lock.json ./
 WORKDIR /shopping
 COPY src ./src
 RUN npm install
-COPY . .
 CMD [ "npm","run","serve" ]
