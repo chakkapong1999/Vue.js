@@ -43,7 +43,7 @@ pipeline {
         stage ('Push Image') {
             steps {
                 script {
-                    docker.withRegistry('', 'docker-hub-credentials') {
+                    docker.withRegistry([ credentialsId: "docker-hub-credentials", url: "" ]) {
                         dockerImage.push('demo')
                     }
                 }
