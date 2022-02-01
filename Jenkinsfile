@@ -27,7 +27,7 @@
 pipeline {
     agent any
     environment {
-        imageName = 'vue-test'
+        imageName = 'chakkapong/vue-test'
         dockerImage = ''
     }
 
@@ -36,6 +36,16 @@ pipeline {
             steps {
                 script {
                     dockerImage = docker.build(imageName,"-f Dockerfile .")
+                }
+            }
+        }
+
+        stage {
+            steps {
+                script {
+                    docker.withRegistry('demo') {
+                        dockerImage.push()
+                    }
                 }
             }
         }
