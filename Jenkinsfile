@@ -40,7 +40,7 @@ pipeline {
             }
         }
 
-        stage {
+        stage ('Push Image') {
             steps {
                 script {
                     docker.withRegistry('demo') {
