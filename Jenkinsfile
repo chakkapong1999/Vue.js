@@ -30,7 +30,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    docker.build(" -t vue-test .")
+                    docker.build("vue-test","-f Dockerfile .")
                 }
             }
         }
