@@ -27,8 +27,8 @@
 pipeline {
     agent any
     environment {
-        imageName = vue-test
-        dockerImage
+        imageName = 'vue-test'
+        dockerImage = ''
     }
 
     stages {
