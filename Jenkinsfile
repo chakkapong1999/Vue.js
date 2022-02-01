@@ -27,8 +27,8 @@
 pipeline {
     agent any
     environment {
-        imageName = "vue-test"
-        dockerImage = ''
+        imageName = vue-test
+        dockerImage
     }
 
     stages {
@@ -43,7 +43,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 script {
-                    docker.run("-p 8500:8080",dockerImage)
+                    dockerImage.run('-p 8500:8080')
                 }
             }
         }
