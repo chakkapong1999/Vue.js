@@ -29,7 +29,9 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                docker.build(" -t vue-test .")
+                script {
+                    docker.build(" -t vue-test .")
+                }
             }
         }
     }
