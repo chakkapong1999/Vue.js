@@ -27,6 +27,7 @@
 pipeline {
     agent any
     environment {
+        docker_credentials = credentials('chakkapong_dockerhub')
         imageName = 'chakkapong/vue-test'
         dockerImage = ''
     }
@@ -40,15 +41,15 @@ pipeline {
             }
         }
 
-        // stage ('Push Image') {
-        //     steps {
-        //         script {
-        //             docker.withRegistry([ credentialsId: "docker-hub-credentials", url: "" ]) {
-        //                 dockerImage.push('demo')
-        //             }
-        //         }
-        //     }
-        // }
+        stage ('Push Image') {
+            steps {
+                script {
+                    docker.withRegistry('', "${docker_credentials}") {
+                        dockerImage.push('demo')
+                    }
+                }
+            }
+        }
 
         stage('Run Container') {
             steps {
