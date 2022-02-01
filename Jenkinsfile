@@ -26,11 +26,24 @@
 
 pipeline {
     agent any
+    environtment {
+        imageName = "vue-test"
+        dockerImage = ''
+    }
+
     stages {
-        stage('Test') {
+        stage('Build Image') {
             steps {
                 script {
-                    docker.build("vue-test","-f Dockerfile .")
+                    dockerImage = docker.build(imageName,"-f Dockerfile .")
+                }
+            }
+        }
+
+        stage('Run Container') {
+            steps {
+                script {
+                    docker.run("-p 8500:8080",dockerImage)
                 }
             }
         }
