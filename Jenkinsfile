@@ -25,7 +25,9 @@
 // }
 
 pipeline {
-    agent docker { image 'node:14.18.3-alpine' }
+    agent {
+        docker { image 'node:14.18.3-alpine' }
+    }
 
     stages {
         stage('Build Image') {
