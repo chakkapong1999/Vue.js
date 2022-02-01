@@ -25,14 +25,11 @@
 // }
 
 pipeline {
-    agent {
-        docker { image 'node:14.18.3-alpine' }
-    }
-
+    agent any
     stages {
-        stage('Build Image') {
+        stage('Test') {
             steps {
-                sh 'node --version'
+                docker.build(" -t vue-test .")
             }
         }
     }
