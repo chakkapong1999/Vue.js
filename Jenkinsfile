@@ -40,15 +40,15 @@ pipeline {
             }
         }
 
-        stage ('Push Image') {
-            steps {
-                script {
-                    docker.withRegistry([ credentialsId: "docker-hub-credentials", url: "" ]) {
-                        dockerImage.push('demo')
-                    }
-                }
-            }
-        }
+        // stage ('Push Image') {
+        //     steps {
+        //         script {
+        //             docker.withRegistry([ credentialsId: "docker-hub-credentials", url: "" ]) {
+        //                 dockerImage.push('demo')
+        //             }
+        //         }
+        //     }
+        // }
 
         stage('Run Container') {
             steps {
