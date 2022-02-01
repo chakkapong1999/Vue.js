@@ -26,7 +26,7 @@
 
 pipeline {
     agent any
-    environtment {
+    environment {
         imageName = "vue-test"
         dockerImage = ''
     }
